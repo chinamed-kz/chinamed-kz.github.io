@@ -6,24 +6,25 @@
 
   <title>ChinaMed Kazakhstan — лечение в Китае для граждан Казахстана</title>
 
-  <meta name="description" content="ChinaMed Kazakhstan — международный медицинский координаторский центр Казахстан–Китай. Диагностика в Алматы, подбор клиник Китая, перевод документов, WhatsApp сопровождение пациентов.">
-  <meta name="keywords" content="лечение в Китае, лечение в Китае из Казахстана, ChinaMed Kazakhstan, медицинский туризм Китай, клиники Китая, онкология Китай, кардиология Китай, реабилитация Китай, ЭКО Китай, check-up Китай">
+  <meta name="description" content="ChinaMed Kazakhstan — международный медицинский координаторский центр Казахстан–Китай. Лечение в Китае, диагностика в Алматы, подбор клиник, перевод документов, WhatsApp сопровождение пациентов.">
+  <meta name="keywords" content="лечение в Китае, лечение в Китае из Казахстана, ChinaMed Kazakhstan, медицинский туризм Китай, клиники Китая, онкология Китай, кардиология Китай, реабилитация Китай, ЭКО Китай, check-up Китай, ортопедия Китай, традиционная китайская медицина, сопровождение пациента Китай">
   <meta name="author" content="ChinaMed Kazakhstan">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="KZ">
   <meta name="geo.placename" content="Almaty">
   <meta name="language" content="Russian">
+  <link rel="canonical" href="https://chinamed-kz.github.io/">
 
   <meta property="og:title" content="ChinaMed Kazakhstan — медицинский мост между Казахстаном и Китаем">
   <meta property="og:description" content="Организация лечения, диагностики и сопровождения пациентов из Казахстана в клиниках Китая.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://chinamed-kz.github.io/">
 
   <style>
-    :root {
+    :root{
       --red:#d71920;
       --blue:#062f5f;
-      --blue2:#0b3d91;
       --gold:#c9972b;
       --gold2:#e8c76a;
       --white:#ffffff;
@@ -43,6 +44,7 @@
       background:var(--white);
       line-height:1.6;
     }
+
     a{text-decoration:none;color:inherit}
     .container{
       width:min(1180px,calc(100% - 32px));
@@ -53,7 +55,7 @@
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(255,255,255,.95);
+      background:rgba(255,255,255,.96);
       backdrop-filter:blur(12px);
       border-bottom:1px solid var(--line);
     }
@@ -104,7 +106,7 @@
     nav{
       display:flex;
       align-items:center;
-      gap:16px;
+      gap:15px;
       font-size:14px;
       font-weight:700;
       color:var(--blue);
@@ -118,6 +120,7 @@
       background:linear-gradient(135deg,var(--gold),var(--gold2));
       color:white!important;
       box-shadow:0 10px 25px rgba(201,151,43,.28);
+      white-space:nowrap;
     }
 
     .burger{
@@ -170,11 +173,13 @@
       color:var(--blue);
       margin-bottom:22px;
     }
+
     h2{
       font-size:clamp(30px,4vw,48px);
       color:var(--blue);
       margin-bottom:16px;
     }
+
     h3{color:var(--blue)}
 
     .hero p{
@@ -243,9 +248,8 @@
     }
 
     .light{background:var(--bg)}
-
     .section-head{
-      max-width:800px;
+      max-width:850px;
       margin-bottom:42px;
     }
 
@@ -273,9 +277,12 @@
       background:white;
       border:1px solid var(--line);
       border-radius:24px;
-      padding:24px;
-      min-height:155px;
+      padding:30px;
+      min-height:215px;
       transition:.2s;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
     }
 
     .direction:hover{
@@ -287,11 +294,24 @@
     .direction strong{
       display:block;
       color:var(--blue);
-      font-size:20px;
-      margin-bottom:10px;
+      font-size:21px;
+      margin-bottom:14px;
     }
 
-    .direction span{color:var(--muted)}
+    .direction span{
+      color:var(--muted);
+      font-size:17px;
+    }
+
+    .direction-more{
+      display:inline-block;
+      margin-top:22px;
+      color:var(--red)!important;
+      font-weight:900;
+      font-size:15px;
+    }
+
+    .direction:hover .direction-more{text-decoration:underline}
 
     .steps{
       display:grid;
@@ -408,12 +428,12 @@
 
     .whatsapp-float:hover{transform:scale(1.1)}
 
-    @media(max-width:1000px){
+    @media(max-width:1100px){
       nav{gap:10px;font-size:13px}
       .directions{grid-template-columns:repeat(2,1fr)}
     }
 
-    @media(max-width:840px){
+    @media(max-width:880px){
       .burger{display:block}
 
       nav{
@@ -447,12 +467,16 @@
     }
 
     @media(max-width:560px){
+      .brand-mark{width:48px;height:48px}
       .brand span{font-size:17px}
       .brand small{font-size:9px}
       h1{font-size:36px}
+      .hero p{font-size:18px}
       .directions{grid-template-columns:1fr}
+      .direction{min-height:180px}
       .price div{flex-direction:column}
       .footer-inner{flex-direction:column}
+      .whatsapp-float{width:58px;height:58px;font-size:28px}
     }
   </style>
 
@@ -516,7 +540,7 @@
 
       <div class="buttons">
         <a class="btn btn-red" href="https://wa.me/77056512203" target="_blank">Получить консультацию</a>
-        <a class="btn btn-white" href="#process">Как это работает</a>
+        <a class="btn btn-white" href="#directions">Выбрать направление</a>
       </div>
     </div>
 
@@ -537,6 +561,7 @@
           <option>ЭКО</option>
           <option>Check-up</option>
           <option>Традиционная китайская медицина</option>
+          <option>Сопровождение пациента</option>
         </select>
 
         <textarea id="message" rows="3" placeholder="Кратко опишите ситуацию"></textarea>
@@ -577,52 +602,77 @@
     <div class="section-head">
       <div class="eyebrow">Основные направления</div>
       <h2>По каким направлениям пациенты едут в Китай</h2>
+      <p>Выберите нужное направление и откройте подробную страницу: документы, процесс, FAQ, сопровождение и связь через WhatsApp.</p>
     </div>
 
-<div class="directions">
+    <div class="directions">
 
-<a class="direction" href="oncology.html">
-<strong>Онкология</strong>
-<span>Подбор клиники и маршрута лечения.</span>
-</a>
+      <a class="direction" href="oncology.html">
+        <div>
+          <strong>Онкология</strong>
+          <span>Подбор клиники и маршрута лечения.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="cardiology.html">
-<strong>Кардиология</strong>
-<span>Диагностика и лечение заболеваний сердца.</span>
-</a>
+      <a class="direction" href="cardiology.html">
+        <div>
+          <strong>Кардиология</strong>
+          <span>Диагностика и лечение заболеваний сердца.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="rehabilitation.html">
-<strong>Неврология и реабилитация</strong>
-<span>Реабилитация после инсульта и травм.</span>
-</a>
+      <a class="direction" href="rehabilitation.html">
+        <div>
+          <strong>Неврология и реабилитация</strong>
+          <span>Реабилитация после инсульта и травм.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="orthopedics.html">
-<strong>Ортопедия</strong>
-<span>Операции, протезирование, восстановление.</span>
-</a>
+      <a class="direction" href="orthopedics.html">
+        <div>
+          <strong>Ортопедия</strong>
+          <span>Операции, протезирование, восстановление.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="eco.html">
-<strong>ЭКО</strong>
-<span>Репродуктивная медицина и сопровождение.</span>
-</a>
+      <a class="direction" href="eco.html">
+        <div>
+          <strong>ЭКО</strong>
+          <span>Репродуктивная медицина и сопровождение.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="checkup.html">
-<strong>Check-up</strong>
-<span>Комплексное обследование организма.</span>
-</a>
+      <a class="direction" href="checkup.html">
+        <div>
+          <strong>Check-up</strong>
+          <span>Комплексное обследование организма.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="tcm.html">
-<strong>Традиционная китайская медицина</strong>
-<span>Дополнительные программы восстановления.</span>
-</a>
+      <a class="direction" href="tcm.html">
+        <div>
+          <strong>Традиционная китайская медицина</strong>
+          <span>Дополнительные программы восстановления.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-<a class="direction" href="support.html">
-<strong>Сопровождение пациента</strong>
-<span>Переводчик, трансфер, визовая поддержка.</span>
-</a>
+      <a class="direction" href="support.html">
+        <div>
+          <strong>Сопровождение пациента</strong>
+          <span>Переводчик, трансфер, визовая поддержка.</span>
+        </div>
+        <span class="direction-more">Подробнее →</span>
+      </a>
 
-</div>
     </div>
+  </div>
 </section>
 
 <section id="process">
@@ -650,14 +700,8 @@
       <h2>Мы не обещаем чудес. Мы организуем понятный медицинский маршрут.</h2>
     </div>
     <div>
-      <p>
-        В этом разделе будут размещаться реальные кейсы пациентов:
-        какие документы готовились, как выбиралась клиника,
-        как проходила поездка и сопровождение.
-      </p>
-      <p>
-        Все материалы публикуются только с согласия пациента и без обещаний гарантированного результата лечения.
-      </p>
+      <p>В этом разделе будут размещаться реальные кейсы пациентов: какие документы готовились, как выбиралась клиника, как проходила поездка и сопровождение.</p>
+      <p>Все материалы публикуются только с согласия пациента и без обещаний гарантированного результата лечения.</p>
     </div>
   </div>
 </section>
@@ -699,15 +743,8 @@
       <h2>ChinaMed Kazakhstan</h2>
     </div>
     <div>
-      <p>
-        ChinaMed Kazakhstan — международный медицинский координаторский центр,
-        который помогает гражданам Казахстана организовать лечение, диагностику
-        и реабилитацию в Китае.
-      </p>
-      <p>
-        Мы соединяем пациента, диагностический центр в Алматы и медицинские учреждения Китая.
-        Наша задача — сопровождение, перевод, организация и координация процесса.
-      </p>
+      <p>ChinaMed Kazakhstan — международный медицинский координаторский центр, который помогает гражданам Казахстана организовать лечение, диагностику и реабилитацию в Китае.</p>
+      <p>Мы соединяем пациента, диагностический центр в Алматы и медицинские учреждения Китая. Наша задача — сопровождение, перевод, организация и координация процесса.</p>
     </div>
   </div>
 </section>
@@ -811,4 +848,4 @@
 </script>
 
 </body>
-</html>
+</html>   
