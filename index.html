@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ChinaMed Kazakhstan — лечение в Китае для граждан Казахстана</title>
+
+  <meta name="description" content="ChinaMed Kazakhstan — международный медицинский координаторский центр Казахстан–Китай. Диагностика в Алматы, подбор клиник Китая, перевод документов, WhatsApp сопровождение пациентов.">
+  <meta name="keywords" content="лечение в Китае, лечение в Китае из Казахстана, ChinaMed Kazakhstan, медицинский туризм Китай, клиники Китая, онкология Китай, кардиология Китай, реабилитация Китай, ЭКО Китай, check-up Китай">
+  <meta name="author" content="ChinaMed Kazakhstan">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="KZ">
+  <meta name="geo.placename" content="Almaty">
+  <meta name="language" content="Russian">
+
+  <meta property="og:title" content="ChinaMed Kazakhstan — медицинский мост между Казахстаном и Китаем">
+  <meta property="og:description" content="Организация лечения, диагностики и сопровождения пациентов из Казахстана в клиниках Китая.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <style>
+    :root {
+      --red:#d71920;
+      --blue:#062f5f;
+      --blue2:#0b3d91;
+      --gold:#c9972b;
+      --gold2:#e8c76a;
+      --white:#ffffff;
+      --bg:#f7f8fb;
+      --text:#1f2937;
+      --muted:#667085;
+      --line:#e5e7eb;
+      --shadow:0 18px 50px rgba(6,47,95,.14);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:var(--white);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{
+      width:min(1180px,calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .header-inner{
+      min-height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      color:var(--blue);
+    }
+
+    .brand-mark{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--red),var(--blue));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:900;
+      font-size:18px;
+    }
+
+    .brand span{
+      display:block;
+      font-size:20px;
+      line-height:1.1;
+    }
+
+    .brand small{
+      display:block;
+      color:var(--gold);
+      letter-spacing:4px;
+      font-size:11px;
+      margin-top:3px;
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      font-size:14px;
+      font-weight:700;
+      color:var(--blue);
+    }
+
+    nav a:hover{color:var(--red)}
+
+    .wa{
+      padding:11px 18px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--gold),var(--gold2));
+      color:white!important;
+      box-shadow:0 10px 25px rgba(201,151,43,.28);
+    }
+
+    .burger{
+      display:none;
+      border:0;
+      background:transparent;
+      cursor:pointer;
+    }
+
+    .burger span{
+      display:block;
+      width:30px;
+      height:3px;
+      margin:6px;
+      background:var(--blue);
+      border-radius:5px;
+    }
+
+    section{padding:86px 0}
+
+    .hero{
+      min-height:calc(100vh - 82px);
+      display:flex;
+      align-items:center;
+      background:
+        radial-gradient(circle at 15% 20%,rgba(215,25,32,.12),transparent 30%),
+        radial-gradient(circle at 85% 10%,rgba(201,151,43,.22),transparent 35%),
+        linear-gradient(135deg,#fff 0%,#f7f8fb 100%);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:56px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      color:var(--red);
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:13px;
+      margin-bottom:14px;
+    }
+
+    h1,h2,h3{line-height:1.15;margin-top:0}
+    h1{
+      font-size:clamp(38px,6vw,70px);
+      color:var(--blue);
+      margin-bottom:22px;
+    }
+    h2{
+      font-size:clamp(30px,4vw,48px);
+      color:var(--blue);
+      margin-bottom:16px;
+    }
+    h3{color:var(--blue)}
+
+    .hero p{
+      font-size:20px;
+      color:var(--muted);
+      max-width:720px;
+    }
+
+    .buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:30px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:52px;
+      padding:14px 24px;
+      border-radius:999px;
+      font-weight:900;
+    }
+
+    .btn-red{
+      background:linear-gradient(135deg,var(--red),#a90d13);
+      color:white;
+      box-shadow:0 16px 35px rgba(215,25,32,.25);
+    }
+
+    .btn-white{
+      background:white;
+      color:var(--blue);
+      border:1px solid var(--line);
+    }
+
+    .hero-card{
+      background:white;
+      border-radius:30px;
+      padding:34px;
+      box-shadow:var(--shadow);
+      border-top:5px solid var(--gold);
+    }
+
+    .hero-card input,
+    .hero-card select,
+    .hero-card textarea{
+      width:100%;
+      padding:15px;
+      margin-bottom:13px;
+      border-radius:15px;
+      border:1px solid var(--line);
+      font-size:15px;
+    }
+
+    .hero-card button{
+      width:100%;
+      border:0;
+      padding:16px;
+      border-radius:15px;
+      background:var(--blue);
+      color:white;
+      font-weight:900;
+      cursor:pointer;
+    }
+
+    .light{background:var(--bg)}
+
+    .section-head{
+      max-width:800px;
+      margin-bottom:42px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:26px;
+      border:1px solid var(--line);
+      box-shadow:0 12px 35px rgba(6,47,95,.06);
+    }
+
+    .directions{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+
+    .direction{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      min-height:155px;
+      transition:.2s;
+    }
+
+    .direction:hover{
+      transform:translateY(-4px);
+      border-color:var(--gold);
+      box-shadow:var(--shadow);
+    }
+
+    .direction strong{
+      display:block;
+      color:var(--blue);
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .direction span{color:var(--muted)}
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .step{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:26px;
+      padding:28px;
+    }
+
+    .step b{
+      display:block;
+      font-size:34px;
+      color:var(--red);
+      margin-bottom:14px;
+    }
+
+    .dark{
+      background:linear-gradient(135deg,var(--blue),#021b33);
+      color:white;
+    }
+
+    .dark h2,.dark h3{color:white}
+    .dark p{color:rgba(255,255,255,.78)}
+
+    .split{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:56px;
+      align-items:start;
+    }
+
+    .price{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:white;
+    }
+
+    .price div{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      padding:20px 24px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .price div:last-child{border-bottom:0}
+    .price strong{color:var(--red)}
+
+    .blog{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .blog article{
+      background:white;
+      border-radius:24px;
+      padding:28px;
+      border:1px solid var(--line);
+    }
+
+    .cta{
+      background:
+        linear-gradient(rgba(6,47,95,.92),rgba(6,47,95,.92)),
+        radial-gradient(circle at 70% 20%,rgba(232,199,106,.45),transparent 35%);
+      color:white;
+      text-align:center;
+    }
+
+    .cta h2{color:white}
+
+    .legal{
+      background:#fff6df;
+      color:#6b4a00;
+      padding:28px 0;
+      font-size:14px;
+    }
+
+    footer{
+      background:#021b33;
+      color:rgba(255,255,255,.78);
+      padding:34px 0;
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      background:#25D366;
+      color:white;
+      font-size:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 8px 25px rgba(0,0,0,.25);
+      z-index:9999;
+      transition:.3s;
+    }
+
+    .whatsapp-float:hover{transform:scale(1.1)}
+
+    @media(max-width:1000px){
+      nav{gap:10px;font-size:13px}
+      .directions{grid-template-columns:repeat(2,1fr)}
+    }
+
+    @media(max-width:840px){
+      .burger{display:block}
+
+      nav{
+        position:absolute;
+        top:82px;
+        left:16px;
+        right:16px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        background:white;
+        border:1px solid var(--line);
+        border-radius:22px;
+        padding:20px;
+        box-shadow:var(--shadow);
+      }
+
+      nav.open{display:flex}
+      nav a{padding:10px}
+
+      .hero-grid,
+      .split,
+      .cards,
+      .steps,
+      .blog{
+        grid-template-columns:1fr;
+      }
+
+      section{padding:64px 0}
+      .hero{min-height:auto}
+    }
+
+    @media(max-width:560px){
+      .brand span{font-size:17px}
+      .brand small{font-size:9px}
+      h1{font-size:36px}
+      .directions{grid-template-columns:1fr}
+      .price div{flex-direction:column}
+      .footer-inner{flex-direction:column}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MedicalBusiness",
+    "name":"ChinaMed Kazakhstan",
+    "description":"Международный медицинский координаторский центр Казахстан–Китай",
+    "areaServed":"Kazakhstan",
+    "serviceArea":["Kazakhstan","China"],
+    "url":"https://chinamed-kz.github.io",
+    "telephone":"+77056512203",
+    "email":"chinamed.kz01@gmail.com",
+    "sameAs":["https://www.instagram.com/chinamed.kz"]
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <div class="brand-mark">CM</div>
+      <div>
+        <span>ChinaMed</span>
+        <small>KAZAKHSTAN</small>
+      </div>
+    </a>
+
+    <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="menu">
+      <a href="#home">Главное</a>
+      <a href="#directions">Направления</a>
+      <a href="#practice">Практика</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#blog">Статьи</a>
+      <a href="#about">О компании</a>
+      <a href="#prices">Стоимость</a>
+      <a href="#contacts">Контакты</a>
+      <a class="wa" href="https://wa.me/77056512203" target="_blank">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Международный медицинский координаторский центр Казахстан–Китай</div>
+      <h1>Лечение в Китае под полным сопровождением</h1>
+      <p>
+        ChinaMed Kazakhstan помогает пациентам из Казахстана организовать диагностику,
+        подбор клиники, перевод медицинских документов, поездку и сопровождение в Китае.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-red" href="https://wa.me/77056512203" target="_blank">Получить консультацию</a>
+        <a class="btn btn-white" href="#process">Как это работает</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Предварительная оценка документов</h3>
+      <p>Оставьте заявку, и координатор подскажет первый шаг.</p>
+
+      <form onsubmit="sendWhatsApp(event)">
+        <input id="name" type="text" placeholder="Ваше имя" required>
+        <input id="phone" type="tel" placeholder="Телефон / WhatsApp" required>
+
+        <select id="direction">
+          <option>Выберите направление</option>
+          <option>Онкология</option>
+          <option>Кардиология</option>
+          <option>Неврология и реабилитация</option>
+          <option>Ортопедия и протезирование</option>
+          <option>ЭКО</option>
+          <option>Check-up</option>
+          <option>Традиционная китайская медицина</option>
+        </select>
+
+        <textarea id="message" rows="3" placeholder="Кратко опишите ситуацию"></textarea>
+        <button type="submit">Отправить в WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Наше преимущество</div>
+      <h2>Не просто посредник, а организованная система сопровождения</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Диагностика в Алматы</h3>
+        <p>Партнёрский медицинский центр помогает провести предварительную диагностику и подготовить документы.</p>
+      </article>
+
+      <article class="card">
+        <h3>Клиники Китая</h3>
+        <p>Контакты и договорённости с китайскими медицинскими учреждениями для рассмотрения пациентов из Казахстана.</p>
+      </article>
+
+      <article class="card">
+        <h3>Юридическая экспертиза</h3>
+        <p>Понимание договоров, медицинского сопровождения, переводов, визовой поддержки и китайского направления.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="directions" class="light">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Основные направления</div>
+      <h2>По каким направлениям пациенты едут в Китай</h2>
+    </div>
+
+    <div class="directions">
+      <a class="direction" href="#"><strong>Онкология</strong><span>Подбор клиники и маршрута лечения.</span></a>
+      <a class="direction" href="#"><strong>Кардиология</strong><span>Диагностика и лечение заболеваний сердца.</span></a>
+      <a class="direction" href="#"><strong>Неврология</strong><span>Реабилитация после инсульта и травм.</span></a>
+      <a class="direction" href="#"><strong>Ортопедия</strong><span>Операции, протезирование, восстановление.</span></a>
+      <a class="direction" href="#"><strong>ЭКО</strong><span>Репродуктивная медицина и сопровождение.</span></a>
+      <a class="direction" href="#"><strong>Check-up</strong><span>Комплексное обследование организма.</span></a>
+      <a class="direction" href="#"><strong>ТКМ</strong><span>Традиционная китайская медицина как дополнение.</span></a>
+      <a class="direction" href="#"><strong>Сопровождение</strong><span>Переводчик, трансфер, виза, родственники.</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Маршрут пациента</div>
+      <h2>Как проходит организация лечения</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Заявка</h3><p>Пациент отправляет обращение и имеющиеся медицинские документы.</p></div>
+      <div class="step"><b>02</b><h3>Оценка</h3><p>Координатор определяет, какие документы и обследования нужны.</p></div>
+      <div class="step"><b>03</b><h3>Диагностика</h3><p>При необходимости организуется предварительное обследование в Алматы.</p></div>
+      <div class="step"><b>04</b><h3>Клиника</h3><p>Документы направляются в китайские клиники для рассмотрения.</p></div>
+      <div class="step"><b>05</b><h3>Поездка</h3><p>Организация перевода, визы, трансфера и сопровождения.</p></div>
+      <div class="step"><b>06</b><h3>Возвращение</h3><p>Пациент получает рекомендации и возвращается домой.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="practice" class="dark">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">Практика</div>
+      <h2>Мы не обещаем чудес. Мы организуем понятный медицинский маршрут.</h2>
+    </div>
+    <div>
+      <p>
+        В этом разделе будут размещаться реальные кейсы пациентов:
+        какие документы готовились, как выбиралась клиника,
+        как проходила поездка и сопровождение.
+      </p>
+      <p>
+        Все материалы публикуются только с согласия пациента и без обещаний гарантированного результата лечения.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Отзывы</div>
+      <h2>Истории пациентов</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card"><h3>Видеоотзывы</h3><p>Здесь будут размещаться видеоотзывы пациентов и их родственников.</p></article>
+      <article class="card"><h3>Письменные отзывы</h3><p>Отзывы о сопровождении, переводе, маршруте и организации поездки.</p></article>
+      <article class="card"><h3>Кейсы</h3><p>Реальные истории организации лечения в Китае.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="light">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Статьи</div>
+      <h2>Полезная информация для пациентов</h2>
+    </div>
+
+    <div class="blog">
+      <article><h3>Сколько стоит лечение в Китае?</h3><p>Из чего складывается бюджет поездки, диагностики и сопровождения.</p></article>
+      <article><h3>Какие документы нужны?</h3><p>Выписки, анализы, снимки, переводы и предварительные заключения.</p></article>
+      <article><h3>Как выбрать клинику?</h3><p>На что обращать внимание при выборе медицинского учреждения в Китае.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">О компании</div>
+      <h2>ChinaMed Kazakhstan</h2>
+    </div>
+    <div>
+      <p>
+        ChinaMed Kazakhstan — международный медицинский координаторский центр,
+        который помогает гражданам Казахстана организовать лечение, диагностику
+        и реабилитацию в Китае.
+      </p>
+      <p>
+        Мы соединяем пациента, диагностический центр в Алматы и медицинские учреждения Китая.
+        Наша задача — сопровождение, перевод, организация и координация процесса.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="prices" class="light">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Стоимость услуг</div>
+      <h2>Услуги координатора</h2>
+    </div>
+
+    <div class="price">
+      <div><span>Первичная консультация</span><strong>от ___ ₸</strong></div>
+      <div><span>Перевод медицинских документов</span><strong>от ___ ₸</strong></div>
+      <div><span>Организация диагностики в Алматы</span><strong>по запросу</strong></div>
+      <div><span>Подбор клиники в Китае</span><strong>по запросу</strong></div>
+      <div><span>Переводчик в Китае</span><strong>по запросу</strong></div>
+      <div><span>Трансфер и визовая поддержка</span><strong>по запросу</strong></div>
+      <div><span>Сопровождение родственников</span><strong>по запросу</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Контакты</div>
+      <h2>Связаться с ChinaMed Kazakhstan</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/77056512203" target="_blank">+7 (705) 651-22-03</a></p>
+      </article>
+
+      <article class="card">
+        <h3>E-mail</h3>
+        <p><a href="mailto:chinamed.kz01@gmail.com">chinamed.kz01@gmail.com</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Instagram</h3>
+        <p><a href="https://instagram.com/chinamed.kz" target="_blank">@chinamed.kz</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Нужна консультация по лечению в Китае?</h2>
+    <p>Напишите нам в WhatsApp — координатор подскажет, с чего начать.</p>
+    <a class="btn btn-red" href="https://wa.me/77056512203" target="_blank">Написать в WhatsApp</a>
+  </div>
+</section>
+
+<section class="legal">
+  <div class="container">
+    <p>
+      Важно: ChinaMed Kazakhstan не является медицинской организацией, не оказывает медицинские услуги
+      и не гарантирует результат лечения. Медицинские решения принимаются только врачами и медицинскими учреждениями.
+      Компания выполняет функции международного медицинского координатора и организатора сопровождения пациентов.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 ChinaMed Kazakhstan</div>
+    <div>Медицинский мост между Казахстаном и Китаем</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/77056512203" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+  function toggleMenu(){
+    document.getElementById("menu").classList.toggle("open");
+  }
+
+  function sendWhatsApp(event){
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const direction = document.getElementById("direction").value;
+    const message = document.getElementById("message").value;
+
+    const text =
+      "Здравствуйте! Хочу получить консультацию ChinaMed Kazakhstan.%0A%0A" +
+      "Имя: " + encodeURIComponent(name) + "%0A" +
+      "Телефон: " + encodeURIComponent(phone) + "%0A" +
+      "Направление: " + encodeURIComponent(direction) + "%0A" +
+      "Описание: " + encodeURIComponent(message);
+
+    window.open("https://wa.me/77056512203?text=" + text, "_blank");
+  }
+</script>
+
+</body>
+</html>
