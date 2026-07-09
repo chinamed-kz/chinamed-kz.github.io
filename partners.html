@@ -2,157 +2,293 @@
 <html lang="ru">
 <head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QL8H5KCCKB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QL8H5KCCKB');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Партнерские клиники Китая | ChinaMed Kazakhstan</title>
 
-<meta name="description" content="ChinaMed Kazakhstan организует лечение граждан Казахстана в ведущих государственных клиниках Китая.">
-
-<meta name="keywords" content="лечение в Китае, клиники Китая, ChinaMed Kazakhstan, медицинский туризм, лечение Казахстан Китай">
+<meta name="description" content="ChinaMed Kazakhstan сотрудничает с ведущими государственными медицинскими учреждениями Китая и организует диагностику, лечение и сопровождение пациентов из Казахстана.">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+:root{
+--red:#d71920;
+--blue:#062f5f;
+--gold:#c9972b;
+--bg:#f7f8fb;
+--text:#1f2937;
+--muted:#667085;
+--line:#e5e7eb;
 }
+
+*{box-sizing:border-box}
 
 body{
-background:#f5f7fb;
-color:#183153;
-line-height:1.6;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
 }
 
-header{
-background:#0b3b73;
-color:#fff;
-padding:70px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:44px;
-margin-bottom:20px;
-}
-
-header p{
-max-width:850px;
-margin:auto;
-font-size:20px;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:16px 40px;
-background:#d71920;
-color:#fff;
+a{
 text-decoration:none;
-border-radius:50px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#b81419;
+color:inherit;
 }
 
 .container{
-max-width:1200px;
+width:min(1120px,calc(100% - 32px));
 margin:auto;
-padding:70px 20px;
 }
 
-.title{
-font-size:38px;
-text-align:center;
-margin-bottom:50px;
-color:#0b3b73;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:35px;
-}
-
-.card{
+header{
+position:sticky;
+top:0;
+z-index:1000;
 background:#fff;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
+border-bottom:1px solid var(--line);
 }
 
-.card:hover{
-transform:translateY(-8px);
+.header-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:78px;
+gap:20px;
 }
 
-.card img{
+.logo{
+font-weight:900;
+font-size:24px;
+color:var(--blue);
+}
+
+.logo span{
+color:var(--red);
+}
+
+.logo small{
+display:block;
+font-size:10px;
+letter-spacing:4px;
+color:var(--gold);
+}
+
+nav{
+display:flex;
+gap:16px;
+align-items:center;
+font-size:14px;
+font-weight:700;
+color:var(--blue);
+}
+
+nav a:hover{
+color:var(--red);
+}
+
+.wa{
+background:var(--gold);
+color:#fff!important;
+padding:10px 16px;
+border-radius:999px;
+}
+
+.burger{
+display:none;
+background:none;
+border:0;
+font-size:30px;
+color:var(--blue);
+}
+
+.hero{
+padding:80px 0;
+background:linear-gradient(135deg,#fff,#f4f6fb);
+}
+
+.eyebrow{
+color:var(--red);
+font-weight:900;
+text-transform:uppercase;
+letter-spacing:.05em;
+}
+
+.hero h1{
+font-size:clamp(38px,5vw,60px);
+line-height:1.15;
+margin:0 0 20px;
+color:var(--blue);
+}
+
+.hero p{
+font-size:20px;
+max-width:900px;
+color:var(--muted);
+}
+
+main section{
+padding:55px 0;
+}
+
+.content{
+background:#fff;
+padding:42px;
+border-radius:28px;
+box-shadow:0 14px 40px rgba(6,47,95,.08);
+margin-bottom:40px;
+}
+
+.content h2{
+color:var(--blue);
+margin-top:0;
+}
+
+.content img{
 width:100%;
-height:240px;
+height:420px;
 object-fit:cover;
+border-radius:22px;
+margin-bottom:28px;
+background:#eee;
 }
 
-.card-content{
-padding:25px;
-}
-
-.card h2{
-font-size:25px;
-margin-bottom:15px;
-color:#0b3b73;
-}
-
-.card p{
-margin-bottom:20px;
-}
-
-.more{
+.badge{
 display:inline-block;
-padding:12px 28px;
-background:#0b3b73;
+padding:8px 14px;
+background:#fff6df;
+border:1px solid var(--gold);
+border-radius:999px;
+font-weight:700;
+color:var(--blue);
+margin-bottom:18px;
+}
+
+.cta{
+margin-top:40px;
+padding:34px;
+border:2px solid var(--gold);
+background:#fff8e9;
+border-radius:24px;
+}
+
+.btns{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.btn{
+display:inline-flex;
+padding:14px 22px;
+border-radius:999px;
+font-weight:900;
+}
+
+.btn-red{
+background:var(--red);
 color:#fff;
-text-decoration:none;
-border-radius:40px;
 }
 
-.info{
-margin-top:80px;
-background:white;
-padding:60px;
-border-radius:20px;
+.btn-blue{
+background:var(--blue);
+color:#fff;
 }
 
-.info h2{
-margin-bottom:30px;
-color:#0b3b73;
+.bottom-nav{
+background:#fff;
+border-top:1px solid var(--line);
+padding:30px 0;
 }
 
-.info ul{
-margin-left:20px;
+.bottom-links{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.bottom-links a{
+padding:10px 14px;
+border:1px solid var(--line);
+border-radius:999px;
+font-weight:700;
+color:var(--blue);
+}
+
+.legal{
+padding:26px 0;
+font-size:14px;
 }
 
 footer{
-margin-top:80px;
-background:#0b3b73;
-color:white;
-padding:40px;
-text-align:center;
+background:#021b33;
+color:#fff;
+padding:32px 0;
 }
 
-@media(max-width:700px){
-
-header h1{
-font-size:34px;
+.footer-inner{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
 }
 
-.title{
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+width:64px;
+height:64px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
 font-size:30px;
+color:#fff;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+z-index:9999;
+}
+
+@media(max-width:850px){
+
+.burger{display:block;}
+
+nav{
+position:absolute;
+top:78px;
+left:16px;
+right:16px;
+display:none;
+flex-direction:column;
+align-items:stretch;
+background:#fff;
+padding:18px;
+border-radius:20px;
+border:1px solid var(--line);
+box-shadow:0 14px 40px rgba(6,47,95,.15);
+}
+
+nav.open{
+display:flex;
+}
+
+.content{
+padding:26px;
+}
+
+.content img{
+height:240px;
 }
 
 }
@@ -165,141 +301,447 @@ font-size:30px;
 
 <header>
 
-<h1>Партнерские клиники Китая</h1>
+<div class="container header-inner">
 
-<p>
-
-ChinaMed Kazakhstan организует диагностику, лечение и хирургические операции граждан Республики Казахстан в ведущих государственных медицинских учреждениях Китая.
-
-</p>
-
-<a href="https://wa.me/77056512203" class="btn">
-
-Получить консультацию
-
+<a class="logo" href="index.html">
+<span>China</span>Med
+<small>KAZAKHSTAN</small>
 </a>
+
+<button class="burger" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+
+<a href="index.html">Главная</a>
+<a href="oncology.html">Онкология</a>
+<a href="cardiology.html">Кардиология</a>
+<a href="rehabilitation.html">Реабилитация</a>
+<a href="eco.html">ЭКО</a>
+<a href="checkup.html">Check-Up</a>
+<a href="index.html#contacts">Контакты</a>
+<a class="wa" href="https://wa.me/77056512203" target="_blank">WhatsApp</a>
+
+</nav>
+
+</div>
 
 </header>
 
-<section class="container">
+<section class="hero">
 
-<h2 class="title">
+<div class="container">
 
-Наши партнерские медицинские центры
+<div class="eyebrow">
+Партнерские клиники Китая
+</div>
 
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="images/pumch.jpg">
-
-<div class="card-content">
-
-<h2>
-
-Пекинская объединённая медицинская академическая больница
-
-</h2>
+<h1>
+Официальные медицинские партнеры ChinaMed Kazakhstan
+</h1>
 
 <p>
 
-Одна из самых известных государственных больниц Китая. Имеет 29 национальных клинических ключевых специализированных отделений и считается одной из лучших клиник страны.
+ChinaMed Kazakhstan организует диагностику, лечение и сопровождение граждан Республики Казахстан в ведущих государственных медицинских учреждениях Китайской Народной Республики. Мы взаимодействуем напрямую с профильными клиниками, сопровождаем пациентов на всех этапах и помогаем организовать медицинскую поездку.
 
 </p>
 
-<a class="more" href="pumch.html">
-
-Подробнее
-
-</a>
-
 </div>
 
-</div>
+</section>
 
-<div class="card">
+<main>
+<section>
 
-<img src="images/beijing-children.jpg">
+<div class="container content">
 
-<div class="card-content">
+<span class="badge">
+Партнер ChinaMed Kazakhstan
+</span>
 
-<h2>
+<h2>Пекинская объединённая медицинская академическая больница</h2>
 
-Пекинская детская больница
-
-</h2>
+<img src="images/pumch.jpg" alt="Пекинская объединённая медицинская академическая больница">
 
 <p>
 
-Ведущий детский медицинский центр Китая. Оказывает высокотехнологичную медицинскую помощь детям от рождения до 18 лет.
+Пекинская объединённая медицинская академическая больница (Peking Union Medical College Hospital, 北京协和医院) является одной из наиболее авторитетных государственных многопрофильных больниц Китайской Народной Республики. На протяжении многих лет она занимает ведущие позиции в национальных рейтингах и считается одним из крупнейших медицинских, научных и образовательных центров страны.
 
 </p>
-
-<a class="more" href="beijing-children.html">
-
-Подробнее
-
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="images/eye-hospital.jpg">
-
-<div class="card-content">
-
-<h2>
-
-Офтальмологическая больница
-
-</h2>
 
 <p>
 
-Один из крупнейших специализированных офтальмологических центров Китая с более чем 130-летней историей.
+ChinaMed Kazakhstan сотрудничает с данным медицинским учреждением и оказывает содействие гражданам Республики Казахстан в организации диагностики, лечения, консультаций профильных специалистов, госпитализации и медицинского сопровождения.
 
 </p>
 
-<a class="more" href="eye-hospital.html">
+<h2>Национальные клинические ключевые специальности</h2>
 
-Подробнее
+<p>
 
-</a>
+По состоянию на 2025 год больница располагает 29 национальными клиническими ключевыми специализированными отделениями, которым государством КНР присвоен статус ведущих профильных медицинских центров страны.
 
-</div>
-
-</div>
-
-</div>
-
-<div class="info">
-
-<h2>
-
-Почему пациенты выбирают ChinaMed Kazakhstan
-
-</h2>
+</p>
 
 <ul>
 
-<li>✔ Организация лечения в ведущих государственных клиниках Китая</li>
+<li>Кардиология</li>
 
-<li>✔ Подбор медицинского учреждения под диагноз пациента</li>
+<li>Кардиохирургия</li>
 
-<li>✔ Перевод медицинских документов</li>
+<li>Онкология</li>
 
-<li>✔ Получение предварительного заключения китайских специалистов</li>
+<li>Лучевая терапия</li>
 
-<li>✔ Полное сопровождение пациента</li>
+<li>Неврология</li>
 
-<li>✔ Помощь на всех этапах лечения</li>
+<li>Нейрохирургия</li>
+
+<li>Ортопедия</li>
+
+<li>Реабилитационная медицина</li>
+
+<li>Гематология</li>
+
+<li>Педиатрия</li>
+
+<li>Инфекционные болезни</li>
+
+<li>Пульмонология</li>
+
+<li>Гастроэнтерология</li>
+
+<li>Урология</li>
+
+<li>Офтальмология</li>
+
+<li>Оториноларингология (ЛОР)</li>
+
+<li>Сосудистая хирургия</li>
+
+<li>Пластическая хирургия</li>
+
+<li>Дерматология</li>
+
+<li>Ревматология и клиническая иммунология</li>
+
+<li>Традиционная китайская медицина</li>
+
+<li>Стоматология</li>
+
+<li>Анестезиология</li>
+
+<li>Клиническая нутрициология</li>
+
+<li>Гериатрия</li>
+
+<li>Терапия</li>
+
+<li>Психиатрия и психосоматическая медицина</li>
+
+<li>Общая хирургия</li>
+
+<li>Радиология</li>
 
 </ul>
+
+<h2>Как ChinaMed Kazakhstan помогает пациентам</h2>
+
+<ul>
+
+<li>предварительный анализ медицинской документации;</li>
+
+<li>перевод медицинских документов на китайский язык;</li>
+
+<li>подбор профильного отделения;</li>
+
+<li>организация консультации специалистов;</li>
+
+<li>организация госпитализации;</li>
+
+<li>сопровождение пациента во время лечения;</li>
+
+<li>координация взаимодействия с медицинским учреждением.</li>
+
+</ul>
+
+</div>
+
+</section>
+<section>
+
+<div class="container content">
+
+<span class="badge">
+Партнер ChinaMed Kazakhstan
+</span>
+
+<h2>Пекинская детская больница</h2>
+
+<img src="images/beijing-children.jpg" alt="Пекинская детская больница">
+
+<p>
+
+Пекинская детская больница (Beijing Children's Hospital, 北京儿童医院) является одним из крупнейших национальных педиатрических медицинских центров Китая. Больница специализируется на диагностике и лечении детей от рождения до 18 лет и считается одним из ведущих учреждений страны в области детской медицины.
+
+</p>
+
+<p>
+
+ChinaMed Kazakhstan оказывает содействие в организации лечения детей из Республики Казахстан, взаимодействуя с профильными отделениями больницы и сопровождая пациентов на всех этапах медицинской поездки.
+
+</p>
+
+<h2>Основные направления</h2>
+
+<ul>
+
+<li>Детская кардиология и кардиохирургия</li>
+
+<li>Детская онкология и гематология</li>
+
+<li>Пульмонология</li>
+
+<li>Детская хирургия</li>
+
+<li>Нейрохирургия</li>
+
+<li>Неврология</li>
+
+<li>Ортопедия</li>
+
+<li>Урология</li>
+
+<li>Нефрология</li>
+
+<li>Эндокринология</li>
+
+<li>ЛОР</li>
+
+<li>Детская реанимация</li>
+
+<li>Интенсивная терапия</li>
+
+<li>Реабилитация</li>
+
+<li>Лучевая диагностика</li>
+
+</ul>
+
+<h2>Преимущества клиники</h2>
+
+<ul>
+
+<li>Национальный центр детской медицины Китая;</li>
+
+<li>более 2100 сотрудников;</li>
+
+<li>около 600 врачей различных специальностей;</li>
+
+<li>современные диагностические и операционные комплексы;</li>
+
+<li>лечение детей от рождения до 18 лет;</li>
+
+<li>международное признание в области детской медицины;</li>
+
+<li>многолетний опыт лечения сложных и редких заболеваний.</li>
+
+</ul>
+
+<h2>ChinaMed Kazakhstan организует</h2>
+
+<ul>
+
+<li>предварительную оценку медицинских документов;</li>
+
+<li>перевод медицинской документации;</li>
+
+<li>подбор профильного отделения;</li>
+
+<li>организацию консультации специалистов;</li>
+
+<li>организацию госпитализации;</li>
+
+<li>сопровождение семьи во время пребывания в Китае;</li>
+
+<li>информационную поддержку после завершения лечения.</li>
+
+</ul>
+
+</div>
+
+</section>
+<section>
+
+<div class="container content">
+
+<span class="badge">
+Партнер ChinaMed Kazakhstan
+</span>
+
+<h2>Офтальмологическая больница</h2>
+
+<img src="images/eye-hospital.jpg" alt="Офтальмологическая больница Китая">
+
+<p>
+
+Офтальмологическая больница является одним из ведущих специализированных медицинских центров Китая в области диагностики и лечения заболеваний глаз. Более 130 лет клиника сочетает клиническую практику, научные исследования и подготовку специалистов, принимая пациентов со всего Китая и из других стран.
+
+</p>
+
+<p>
+
+ChinaMed Kazakhstan помогает пациентам из Республики Казахстан организовать обследование и лечение в данной клинике, включая предварительную оценку документов, консультации специалистов и сопровождение во время поездки.
+
+</p>
+
+<h2>Основные направления лечения</h2>
+
+<ul>
+
+<li>Катаракта</li>
+
+<li>Глаукома</li>
+
+<li>Заболевания сетчатки</li>
+
+<li>Заболевания роговицы</li>
+
+<li>Витреоретинальная хирургия</li>
+
+<li>Диабетическая ретинопатия</li>
+
+<li>Детская офтальмология</li>
+
+<li>Косоглазие</li>
+
+<li>Опухоли глаза</li>
+
+<li>Травмы глаза</li>
+
+<li>Пластическая хирургия век</li>
+
+<li>Лазерная коррекция зрения</li>
+
+</ul>
+
+<h2>Современное оборудование</h2>
+
+<ul>
+
+<li>фемтосекундные лазерные системы;</li>
+
+<li>эксимерные лазеры;</li>
+
+<li>операционные микроскопы ZEISS;</li>
+
+<li>OCT с ангиографией;</li>
+
+<li>ультразвуковые биомикроскопы;</li>
+
+<li>Optos для диагностики глазного дна;</li>
+
+<li>современные лазерные установки;</li>
+
+<li>оборудование для микрохирургии глаза.</li>
+
+</ul>
+
+<h2>ChinaMed Kazakhstan организует</h2>
+
+<ul>
+
+<li>перевод медицинских документов;</li>
+
+<li>получение предварительного заключения специалистов;</li>
+
+<li>организацию консультации;</li>
+
+<li>подбор программы лечения;</li>
+
+<li>организацию поездки;</li>
+
+<li>сопровождение пациента на всех этапах лечения.</li>
+
+</ul>
+
+<div class="cta">
+
+<h2>Получить консультацию</h2>
+
+<p>
+
+Если вам необходимо пройти диагностику или лечение в одной из наших партнерских клиник Китая, свяжитесь с координатором ChinaMed Kazakhstan. Мы поможем подобрать профильное медицинское учреждение, подготовить документы и организовать лечение.
+
+</p>
+
+<p>
+
+<strong>WhatsApp:</strong> +7 705 651 22 03<br>
+<strong>E-mail:</strong> chinamed.kz01@gmail.com
+
+</p>
+
+<div class="btns">
+
+<a class="btn btn-red" href="https://wa.me/77056512203" target="_blank">
+
+Написать в WhatsApp
+
+</a>
+
+<a class="btn btn-blue" href="index.html">
+
+На главную
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<section class="bottom-nav">
+
+<div class="container">
+
+<h2>Другие направления</h2>
+
+<div class="bottom-links">
+
+<a href="index.html">Главная</a>
+
+<a href="oncology.html">Онкология</a>
+
+<a href="cardiology.html">Кардиология</a>
+
+<a href="rehabilitation.html">Реабилитация</a>
+
+<a href="eco.html">ЭКО</a>
+
+<a href="checkup.html">Check-Up</a>
+
+<a href="index.html#contacts">Контакты</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="legal">
+
+<div class="container">
+
+<p>
+
+Важно: ChinaMed Kazakhstan не оказывает медицинские услуги и не гарантирует результат лечения. Решения о диагностике и лечении принимаются исключительно врачами и медицинскими учреждениями.
+
+</p>
 
 </div>
 
@@ -307,9 +749,41 @@ ChinaMed Kazakhstan организует диагностику, лечение 
 
 <footer>
 
-© ChinaMed Kazakhstan
+<div class="container footer-inner">
+
+<div>
+
+© 2026 ChinaMed Kazakhstan
+
+</div>
+
+<div>
+
+WhatsApp: +7 705 651 22 03<br>
+
+E-mail: chinamed.kz01@gmail.com
+
+</div>
+
+</div>
 
 </footer>
+
+<a href="https://wa.me/77056512203" class="whatsapp-float" target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("open");
+
+}
+
+</script>
 
 </body>
 </html>
