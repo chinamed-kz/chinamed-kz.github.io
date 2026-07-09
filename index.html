@@ -839,6 +839,12 @@ gtag('config', 'G-QL8H5KCCKB');
     document.getElementById("menu").classList.toggle("open");
   }
 
+  document.querySelectorAll('#menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('menu').classList.remove('open');
+    });
+});
+  
   function sendWhatsApp(event){
     event.preventDefault();
 
