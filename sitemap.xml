@@ -52,5 +52,120 @@
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
-  
+
+  <!-- ONCOLOGY: RU -->
+  <url>
+    <loc>https://chinamed-kz.github.io/oncology.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ONCOLOGY: KZ -->
+  <url>
+    <loc>https://chinamed-kz.github.io/kk/oncology.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ONCOLOGY: EN -->
+  <url>
+    <loc>https://chinamed-kz.github.io/en/oncology.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ONCOLOGY: ZH-CN -->
+  <url>
+    <loc>https://chinamed-kz.github.io/zh-cn/oncology.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN PAGE -->
+  <url>
+    <loc>https://chinamed-kz.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- TREATMENT AREAS -->
+  <url>
+    <loc>https://chinamed-kz.github.io/oncology.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/cardiology.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/rehabilitation.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/orthopedics.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/eco.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/checkup.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://chinamed-kz.github.io/tcm.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PATIENT SUPPORT -->
+  <url>
+    <loc>https://chinamed-kz.github.io/support.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PARTNERS -->
+  <url>
+    <loc>https://chinamed-kz.github.io/partners.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PATIENT RIGHTS: RU -->
+  <url>
+    <loc>https://chinamed-kz.github.io/patient-rights-china.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PATIENT RIGHTS: KZ -->
+  <url>
+    <loc>https://chinamed-kz.github.io/kk/patient-rights-china.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PATIENT RIGHTS: EN -->
+  <url>
+    <loc>https://chinamed-kz.github.io/en/patient-rights-china.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PATIENT RIGHTS: ZH-CN -->
+  <url>
+    <loc>https://chinamed-kz.github.io/zh-cn/patient-rights-china.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+ 
 </urlset>
